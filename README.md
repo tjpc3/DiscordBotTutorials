@@ -1,4 +1,4 @@
-# Building your first basic bot on Discord
+# Building your first Discord bot
 Hello and welcome! In this tutorial you will learn to build your first basic bot on Discord! By the end of this tutorial your bot will be able to log into discord, respond to messages, and even perform basic moderation functions. We will be writing our bot in discord.js, a common node.js library for developing bots. This tutorial is for Windows users only.
 
 First you'll want to setup your bot account.
