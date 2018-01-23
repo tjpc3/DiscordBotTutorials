@@ -1,5 +1,5 @@
 # Building your first basic bot on Discord
-Hello and welcome! In this tutorial you will learn to build your first basic bot on Discord! By the end of this tutorial your bot will be able to log into discord, respond to messages, and even perform basic moderation functions. We will be writing our bot in discord.js, a common node.js library for developing bots. This tutorial is for Windows users ONLY.
+Hello and welcome! In this tutorial you will learn to build your first basic bot on Discord! By the end of this tutorial your bot will be able to log into discord, respond to messages, and even perform basic moderation functions. We will be writing our bot in discord.js, a common node.js library for developing bots. This tutorial is for Windows users only.
 
 First you'll want to setup your bot account.
 The Reactiflux community has created a great step-by-step guide for setting up a discord bot account [here.](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
@@ -11,7 +11,7 @@ After you've completed the setup of node.js, created a folder on your desktop. I
 
 ![](https://i.imgur.com/OGRNrUE.png)
 
-Once you have a command window open, type in `npm init` in order to initialize the folder so it can be used with node.js. You will prompted to type in information, but just press enter for all of them for now, as you can edit them later. After you've done that you'll need to install discord.js so you can connect to Discord. run `npm install discord.js --save`. This will install discord.js to the project so we can use it in our code. Leave this command prompt open for later.
+Once you have a command window open, type in `npm init` in order to initialize the folder so it can be used with node.js. You will prompted to type in information, but just press enter for all of them for now, as you can edit them later. After you've done that you'll need to install discord.js so you can connect to Discord. Run `npm install discord.js --save`. This will install discord.js to the project so we can use it in our code. Leave this command prompt open for later.
 
 Once discord.js has been installed, you can start writing your bot. Right click on an empty space in the folder, go to "New", and click on "Text Document". Rename the file to index.js. If it asks you if you would like to change the extension, click "Yes". Open the file in a text editor of your choice; if you don't have a text editor installed, right-click on the file and hit "Edit", this will open the file in Notepad. 
 ![](https://i.imgur.com/fJYQmS7.png)
@@ -102,12 +102,12 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 ```
 This will help with performance.
-Next we have another issue, the bot token is in the middle of our main index.js file, this is a security risk and makes changing the token more difficult. Lets make a separate file in our folder and name it `token.js`. Inside token.js, let's put this:
+Next we have another issue, the bot token is in the middle of our main index.js file, this is a security risk and makes changing the token more difficult. Let's make a separate file in our folder and name it `token.js`. Inside token.js, we'll put this:
 ```javascript
 module.exports.token = "your-bot-token";
 ```
 What is `module.exports`? 
-`module` is another built-in object like `console`. It allows you to access what happens when this javascript file gets loaded by another file. everything in the `exports` property of `module` gets loaded. So when we set the `token` property of `exports` we can use the value stored in it (in this case our bot token) later. Lets go back to our original file and change this line:
+`module` is another built-in object like `console`. It allows you to access what happens when this javascript file gets loaded by another file. everything in the `exports` property of `module` gets loaded. So when we set the `token` property of `exports` we can use the value stored in it (in this case our bot token) later. Let's go back to our original file and change this line:
  ```javascript
  client.login("your-bot-token");
  ```
