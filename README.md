@@ -8,6 +8,7 @@ Be sure to keep your bot token, we'll need it later.
 Once you've created the bot and added it to a server, next you'll need to setup node.js on your computer. You can download node.js from [here.](https://nodejs.org/en/) Follow the instructions in the installer like you would any program.
 
 After you've completed the setup of node.js, created a folder on your desktop. In my case I've named it "TutorialBot", but you can name it whatever you like. Open a command window and navigate to the folder you've just created. A shortcut for this is to shift + right-click on an empty spot in the folder and click on "Open command window here". 
+
 ![](https://i.imgur.com/OGRNrUE.png)
 
 Once you have a command window open, type in `npm init` in order to initialize the folder so it can be used with node.js. You will prompted to type in information, but just press enter for all of them for now, as you can edit them later. After you've done that you'll need to install discord.js so you can connect to Discord. run `npm install discord.js --save`. This will install discord.js to the project so we can use it in our code. Leave this command prompt open for later.
@@ -72,6 +73,7 @@ So Now your bot can respond to pings, but that's not very useful. Something we c
 If you save it now and run `node index.js`, you should be able to use a new command!
 
 ![](https://media.giphy.com/media/3oFzmiRPJUbqa5L2yA/giphy.gif)
+
 So again, what do these lines do? `else if (msg.content == ";;nuke")` checks to see if the messsage content is equal to `;nuke` only if the first check of `;;ping` didn't work. This makes it so if the message is equal to `;;ping` it wont later try to check to see if it's equal to `;;nuke`. Next `msg.channel.bulkDelete(100);` gets the channel the message was sent in and runs the `bulkDelete` function. This function takes in a number, and deletes that many messages from the channel. (Note: Your bot will need to have the "Manage Messages" permission on your server in order for this to work.) Since we give it the number 100, it's going to delete 100 messages.
 
 And there you go! You now have a simple bot that logs into discord and can perform basic moderation functions. Here's what your code should look like all together.
