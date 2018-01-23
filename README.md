@@ -114,7 +114,7 @@ What is `module.exports`?
  client.login(require("./token.js").token);
  ```
  
-This will load the token.js file and access the `token` property of `module.exports` we set earlier. This value contains our bot's token, so our bot logs into Discord. 
+This will load the token.js file and access the `token` property of `module.exports` we set earlier. This value contains our bot's token, so our bot logs into Discord. The completed code is in the root of this repository.
 
 And that's all for this tutorial! If you want more information on how to use discord.js or node.js check out the documentation below.
 
