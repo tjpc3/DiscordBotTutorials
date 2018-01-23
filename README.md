@@ -14,6 +14,7 @@ After you've completed the setup of node.js, created a folder on your desktop. I
 Once you have a command window open, type in `npm init` in order to initialize the folder so it can be used with node.js. You will prompted to type in information, but just press enter for all of them for now, as you can edit them later. After you've done that you'll need to install discord.js so you can connect to Discord. Run `npm install discord.js --save`. This will install discord.js to the project so we can use it in our code. Leave this command prompt open for later.
 
 Once discord.js has been installed, you can start writing your bot. Right click on an empty space in the folder, go to "New", and click on "Text Document". Rename the file to index.js. If it asks you if you would like to change the extension, click "Yes". Open the file in a text editor of your choice; if you don't have a text editor installed, right-click on the file and hit "Edit", this will open the file in Notepad. 
+
 ![](https://i.imgur.com/fJYQmS7.png)
 
 Now you can begin writing code! To make sure node.js is working try typing this:
